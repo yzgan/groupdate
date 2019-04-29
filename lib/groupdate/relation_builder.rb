@@ -11,9 +11,9 @@ module Groupdate
       @week_start = week_start
       @day_start = day_start
 
-      if relation.default_timezone == :local
-        raise Groupdate::Error, "ActiveRecord::Base.default_timezone must be :utc to use Groupdate"
-      end
+      # if relation.default_timezone == :local
+      #   raise Groupdate::Error, "ActiveRecord::Base.default_timezone must be :utc to use Groupdate"
+      # end
     end
 
     def generate
